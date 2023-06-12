@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikel</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body id="login">
+    <header>
+        <nav class="navbar navbar-expand navbar-light bg-white">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="C:\Users\Silas\Desktop\Projeto Niquel\home.html">
+              <img
+                src="nikel-small-logo.png"
+                alt="logo-nikel"
+                class="img-fluid"
+                srcset=""
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <div class="d-flex menu">
+                <a href="C:\Users\Silas\Desktop\Projeto Niquel\home.html"
+                  ><button class="btn" type="button">
+                    <i class="bi bi-house-door-fill fs-4"></i>
+                  </a>
+                <a href="C:\Users\Silas\Desktop\Projeto Niquel\transacoes.html"
+                  ><button class="btn" type="button">
+                    <i class="bi bi-currency-exchange fs-4 color-secondary"></i>
+                    </button></a>
+  
+                <div class="dropdown">
+                  <button
+                    class="btn"
+                    type="button"
+                    id="dropdowMenuButton1"
+                    data-bs-toggle="dropdow"
+                    aria-expanded="false"
+                  >
+                    <i class="bi bi-person-circle fs-4"></i>
+                  </button>
+                  <ul class="dropdown-menu logout" aria-labelledby="dropdownMenuButton1">
+                    li><a class="dropdown-item" id= "button-logout" href="#">Sair</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <main>
+      <div class="container">
+        <div class="row vh-100">
+          <div class="col d-flex justify-contente-center my-5 flex-column">
+            <div class="text-login">
+              
+              <p><b>Controle seu dinheiro e economize !</b></p>
+              
+            </div>
+            <div class="text-center">
+              <img
+                src="pocket.png"
+                alt="image pocket"
+                class="img-fluid"
+                srcset=""
+              />
+      
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center my-5 flex-column">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="text-center mb-3">
+                    <img
+                      src="nikel-logo.png"
+                      alt="logo nikel"
+                      class="img-fluid"
+                      srcset=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+
+                    <form id="login-form">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"
+                          >E-mail</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                        <div id="emailHelp" class="form-text">
+                          Utilize seu e-mail para realizar o login.
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label"
+                          >Senha</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                        />
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="session-check"
+                        />
+                        <label class="form-check-label" for="session-check"
+                          >Permanecer logado.</label
+                        >
+                      </div>
+                      <button type="submit" class="button-login">Entrar</button>
+                      
+                    </form>
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text-center mt-2 form-text" data-bs-toggle="modal" data-bs-target="#register-modal">
+                    Ainda não tem conta?
+                    <span class="link-default">Criar uma conta.</span>
+                  </p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal -->
+<div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Crie sua conta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form id="create-form">
+      <div class="modal-body">
+          <div class="mb-3">
+            <label for="email-create-input" class="form-label"
+              >E-mail</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email-create-input"
+              aria-describedby="emailHelp" required>
+            
+            <div id="emailHelp" class="form-text">
+              Utilize seu e-mail para criar a conta.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="password-create-input" class="form-label"
+              >Senha</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="password-create-input" required>
+            
+            <div id="emailHelp" class="form-text">
+              Utilize uma senha fácil de lembrar e anote para não esquecer.
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary button-cancel" data-bs-dismiss="modal">Cancelar</button>
+        <button type="submit" class="btn button-default">Criar conta</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+  </body>
+  <footer>
+    <!--criado por Luckas Souza-->
+    <main>
+        <div class="container">
+           
+                  />
+                </div> 
+            <div class="row vh-100">
+                <div class="col d-flex justify-content-center my-5 flex-column">
+                    <div class="col">
+                        <div class="text-center">
+                          <img
+                            src="coins-small.png"
+                            alt=""
+                            srcset=""
+                    <div class="text-login">
+                        
+                        <p>Organize suas finanças</p>
+                        <p>Controle seus investimentos</p>
+                        <p>Atinja seus objetivos</p>
+                        <div class="col">
+                            <div class="text-center">
+                              <img
+                                src="nikel-small-logo.png"
+                                alt=""
+                                srcset=""
+                              />
+                            </div> 
+                            <div class="row">
+                                <div class="col">
+                                  <div class="text-center mt-5">
+                                    <img
+                                      src="codai-logo.png"
+                                      alt=""
+                                      srcset=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <div class="text-center">
+                                    <img
+                                      src="growdev-logo.png"
+                                      alt=""
+                                      srcset=""
+                                    />
+                                  </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
+                 
+  </footer>
+</html>
